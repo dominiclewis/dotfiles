@@ -1,5 +1,5 @@
 # Env
-export EDITOR = $(which vim)
+export EDITOR=$(which vim)
 
 # Aliases
 alias ll="ls -al"
