@@ -1,3 +1,6 @@
+# Make zsh perform more like bash
+bindkey -e
+
 # Env
 export EDITOR=$(which vim)
 
