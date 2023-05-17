@@ -1,0 +1,7 @@
+[user]
+	email = <WORK_EMAIL_ADDRESS>
+	name = Dominic Lewis
+
+[includeIf "gitdir:~/p_repo/"]
+	path = ~/p_repo/.gitconfig.pers
+

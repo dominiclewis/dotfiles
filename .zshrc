@@ -25,8 +25,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Copilot CLI
-eval "$(github-copilot-cli alias -- "$0")"
+# Copilot CLIS
+if command -v github-copilot-cli; then
+    eval "$(github-copilot-cli alias -- "$0")"
+fi
 
 # TMUX
 if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [[ "$TERM_PROGRAM" != "vscode" ]] ; then
