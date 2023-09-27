@@ -1,6 +1,15 @@
 # Make zsh perform more like bash
 bindkey -e
 
+# History File Setup
+HISTFILE=~/.zsh_history
+# Set the maximum number of commands in the in-memory history list
+HISTSIZE=1000
+# Set the maximum number of commands saved to the history file
+SAVEHIST=10000
+# Append to it instead of Overwriting
+setopt INC_APPEND_HISTORY
+
 # Env
 export EDITOR=$(which vim)
 
